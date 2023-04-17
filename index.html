@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator FA2</title>
+    <script src="fa2.js"></script>
+    <link rel="stylesheet" type="text/css" href="fa2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titles">
+        <div class="head"><h1>calc U</h1></div>
+    </div>
+
+    <div class="border"></div>
+
+    <div class="h3"><h3>This page is...</h3></div>
+
+    <form action="num1">
+        <label>number 1: </label>
+        <input id="num1" type="text" oninput="firstNum()">
+        <label>number 2: </label>
+        <input id="num2" type="text" oninput="scdNum()">
+        <br><br>
+
+        <button id="add" onclick="addi()">+</button>
+        <button id="sub" onclick="subt()">-</button>
+        <button id="mul" onclick="mult()">*</button>
+        <button id="div" onclick="divi()">/</button>
+        <button id="per" onclick="perc()">%</button>
+
+        <br><br>
+        <div class="result">
+            <p id="result" style="background-color: #004346; margin-top: 10px; color: rgb(221, 214, 247);">Results will be displayed here</p>
+        </div>
+    </form>       
+ 
+</body>
+</html>
